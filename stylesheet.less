@@ -50,10 +50,6 @@ h1 {
 	padding:10px 0px;
 }
 
-.menu-page h1 {
-		background-color:@color-swatch7;
-}
-
 h2 {
 	font-family:@font-swatch2-font-family; 
 	font-weight: @font-swatch2-font-weight; 
@@ -393,11 +389,30 @@ button.btn,
 }
 
 .menu-item-nutritional-title {
-	font-weight: @font-swatch9-font-weight;
+	font-weight: @font-swatch5-font-weight;
+	text-decoration: underline;
 }
 
 .menu-name-background {
 	margin-bottom:10px;
+}
+
+.menu-header h2:before, .widget.menu .main .menu-subsection-header h2:before, .menu-header h1:before {
+    content: "x";
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    font-size:20px;
+    margin-right:15px;
+}
+
+.widget.menu .main .menu-subsection-header h2:after, .menu-header h1:after  {
+    content: "x";
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    font-size:20px;
+    margin-left:15px;
 }
 
 /*	===============================
@@ -585,7 +600,7 @@ footer.bk-footer h3 {
 	}
 }
 .menu-item-promoted, .main .menu-subsection {
-	background: fade(@color-swatch5, 5%);
+	background-color: rgba(1, 1, 1, 0.05);
 	border: 3px solid @color-swatch3;
 }
 
