@@ -1,4 +1,4 @@
-coffeelab
-=========
+Coffee Lab 
+=======
 
 Menu Template
