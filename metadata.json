@@ -122,7 +122,7 @@
             "font-family": "\"Arvo\", Georgia, serif",
             "font-size": "18px",
             "font-weight": "300",
-            "line-height": "52px",
+            "line-height": "26px",
             "color": "@color-swatch7",
             "letter-spacing": "inherit"
         },

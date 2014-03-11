@@ -612,7 +612,7 @@ header.bk-header {
             .header-left {
                 float:left;
                 width:33%;
-                padding-top:10px;
+                padding-top:20px;
                 .widget.profile span {
                     float:left;
                 }
@@ -633,6 +633,9 @@ header.bk-header {
                 float:right;
                 width:33%;
                 padding-top:20px;
+                .widget.profile span {
+                    float:right;
+                }
                 .widget.profile {
                     @media @tablet {
                     margin:0px auto;
@@ -1200,6 +1203,12 @@ a.blog-post-more-link, .blog-list-footer a {
 	}
 
 	header.bk-header .header-left .widget.profile span {
+		margin:0px auto;
+		display:table;
+		float:none;
+	}
+
+	header.bk-header .header-right .widget.profile span {
 		margin:0px auto;
 		display:table;
 		float:none;
