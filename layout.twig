@@ -30,10 +30,10 @@
 	</div>
 	    <div class="companyheader wrapper clearfix">
 	        <div class="header-left">
-	            {{widget('content', 'footercolumn1content', {"content":"<h4>TELEPHONE: +1 512-291-8222</h4>"})|raw}}
+	            {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
 	        </div>
 	        <div class="header-center">
-	            {{widget('companyname', 'companyname', {"business": "COFFEE LAB"})|raw}}
+	            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
 	        </div>
 	        <div class="header-right">
 	        	{{widget('content', 'footercolumn2content', {"content":"<h4>OPEN TIL 11PM EVERYDAY</h4>"})|raw}}
