@@ -571,9 +571,16 @@ footer.bk-footer h3 {
 		color: lighten(@color-swatch5, 20%);
 	}
 }
-.menu-item-promoted, .main .menu-subsection {
+
+.main .menu-subsection {
+	border:0;
+	background-color:transparent;
+}
+
+.menu-subsection-wrapper.menu-subsection-promoted {
 	background-color: rgba(1, 1, 1, 0.05);
 	border: 3px solid @color-swatch3;
+	padding:10px;
 }
 
 .menu-item-promoted {
@@ -811,7 +818,6 @@ span.cross {
 }
 
 .widget.menusections ul {
-	padding:2em 0 0 0;
 	a {
 		font-size:bkscale(@font-swatch6-font-size, 1.2);
 	}
