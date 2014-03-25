@@ -1,0 +1,21 @@
+
+{% block content %}
+
+<header class="bk-header">
+	<div class="logo">
+		{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+	</div>
+	    <div class="companyheader wrapper clearfix">
+	        <div class="header-left">
+	            {{widget('profile', 'headercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+	        </div>
+	        <div class="header-center">
+	            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+	        </div>
+	        <div class="header-right">
+	        	{{widget('profile', 'headercolumn1profileAddress', { 'profileType':'address', 'address':'profile'})|raw}} 
+	        </div>
+	    </div>       
+</header>
+
+{% endblock %}
