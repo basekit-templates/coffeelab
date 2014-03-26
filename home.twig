@@ -1,8 +1,43 @@
+
 {% extends "layout.twig" %}
+
 {% block content %}
+
+
+<header class="bk-header">
+	<div class="logo">
+		{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+	</div>
+	    <div class="companyheader wrapper clearfix">
+	        <div class="header-left">
+	            {{widget('profile', 'headercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+	        </div>
+	        <div class="header-center">
+	            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+	        </div>
+	        <div class="header-right">
+	        	{{widget('profile', 'headercolumn1profileAddress', { 'profileType':'address', 'address':'profile'})|raw}} 
+	        </div>
+	    </div>       
+</header>
+
+		<div class="canvas">
+
+		<nav class="nav">
+			{{widget('extendednavigation', 'navigationheader', {})|raw}}
+		</nav>
+
+		<div class="page-wrap">
 
 <section class="section main home-page">
 	{{zone('main')|raw}}
 </section>
+
+</div>
+</div>
+
+<footer class="bk-footer">
+   {{widget('profile', 'footercolumn1profileAddress', { 'profileType':'address', 'address':'profile'})|raw}}
+</footer>
 
 {% endblock %}
